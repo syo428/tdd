@@ -20,7 +20,7 @@ Deno.test("two numbers separated by comma", () => {
 
 //Étape 4 - plusieurs nombres (red)
 Deno.test("multiple numbers", () => {
- assertEquals(add4("1,2,3,4"), 10)
+ assertEquals(add("1,2,3,4"), 10)
 })
 
 //Étape 5 - retour à la ligne accepté comme séparateur
