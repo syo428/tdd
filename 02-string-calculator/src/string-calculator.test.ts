@@ -23,5 +23,11 @@ Deno.test("multiple numbers", () => {
  assertEquals(add4("1,2,3,4"), 10)
 })
 
+//Étape 5 - retour à la ligne accepté comme séparateur
+Deno.test("new lines are valid separators", () => {
+ assertEquals(add("1\n2,3"), 6)
+})
+
+
 
 
