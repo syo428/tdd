@@ -30,4 +30,14 @@ export function add4(numbers: string): number {
  return values.reduce((sum, value) => sum + Number(value), 0)
 }
 
+//Étape 5 - retour à la ligne accepté comme séparateur
+export function add5(numbers: string): number {
+ if (numbers === "") return 0
+
+ const values = numbers
+   .replaceAll("\n", ",")
+   .split(",")
+
+ return values.reduce((sum, value) => sum + Number(value), 0)
+}
 
