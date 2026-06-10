@@ -28,3 +28,6 @@ Deno.test("school devient oolschay", () => {
 Deno.test("three devient eethray", () => {
   assertEquals(pigLatin("three"), "eethray")
 })
+Deno.test("glove devient oveglay", () => {
+  assertEquals(pigLatin("glove"), "oveglay")
+})
