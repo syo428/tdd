@@ -5,5 +5,11 @@ export function pigLatin(word: string): string {
     return word + "ay"
   }
 
-  return word.slice(1) + word[0] + "ay"
+  let i = 0
+
+  while (i < word.length && !voyelles.includes(word[i])) {
+    i++
+  }
+
+  return word.slice(i) + word.slice(0, i) + "ay"
 }
