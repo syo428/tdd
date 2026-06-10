@@ -12,3 +12,7 @@ Deno.test("ear devient earay", () => {
 Deno.test("igloo devient iglooay", () => {
   assertEquals(pigLatin("igloo"), "iglooay")
 })
+
+Deno.test("pig devient igpay", () => {
+  assertEquals(pigLatin("pig"), "igpay")
+})
